@@ -19,6 +19,8 @@ body {
 
 
 .teaser .hero-body {
+  background-color: black;
+  color: white;
   padding-top: 0;
   padding-bottom: 3rem;
 }
