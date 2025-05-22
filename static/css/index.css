@@ -1,7 +1,6 @@
 body {
   font-family: 'Noto Sans', sans-serif;
-  background-color: #555;
-  color: #FFF;
+  background: linear-gradient(to bottom, #333333, black);
 }
 
 
