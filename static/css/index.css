@@ -1,6 +1,7 @@
 body {
   font-family: 'Noto Sans', sans-serif;
-  color: rgb(255, 255, 214)
+  background-color: black;
+  color: white;
 }
 
 
@@ -20,8 +21,6 @@ body {
 
 
 .teaser .hero-body {
-  background-color: black;
-  color: white;
   padding-top: 0;
   padding-bottom: 3rem;
 }
