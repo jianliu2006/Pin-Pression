@@ -1,6 +1,5 @@
 body {
   font-family: 'Noto Sans', sans-serif;
-  background: linear-gradient(to bottom, #333333, black);
 }
 
 
@@ -46,7 +45,6 @@ body {
 }
 
 .publication-header .hero-body {
-  background: linear-gradient(to bottom, #333333, black);
 }
 
 .publication-title {
