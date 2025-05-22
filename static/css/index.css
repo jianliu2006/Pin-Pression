@@ -46,6 +46,7 @@ body {
 }
 
 .publication-header .hero-body {
+  background: linear-gradient(to bottom, #333333, black);
 }
 
 .publication-title {
