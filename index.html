@@ -155,7 +155,7 @@
 
 <!-- End Supplementary PDF link -->       
 
-<!-- Paper mthod -->
+<!-- Paper method -->
   <section class="hero teaser" style="background: black;">
     <div class="container is-max-desktop">
       <div class="hero-body">
@@ -164,27 +164,18 @@
         <h2 class="subtitle" style="color:white;">
           <h2 class="title is-5  has-text-centered" style="margin-top: 10px;color:white;">Overview of our learning-based approach:</h2>
           <p style="font-size: 18px; line-height: 1.5;color:white;">
-            <b><i>(a) Rendering alignment</i></b> : The robot in the target domain moves around the object, capturing
-            multi-view observations to estimate the rendering parameters 𝜶 of 2D Gaussian Splats. Once optimized, 𝜶 is
-            frozen.<br>
-            <img src="static/images/pin-gripper.png" alt="Gripper Image" style="width: 100%; height: auto;">
-            <p style="font-size: 18px; line-height: 1.5;color:white;">
-            <b><i>(b) Identification of physics parameters</i></b> : Both source and target domain apply the same
-            task-agnostic physical interactions 𝒂<i><sub>t</sub></i>.
-            In the source domain, dynamics are computed via LCP with physical parameters <i>θ</i> to update the
-            rendering. <i>θ</i> is then optimized with the rendering loss between two domains.<br><br>
+            Our method obtains the current state information about the object, 
+            gripper, and their interaction to predict the appropriate action that moves the pins of the gripper finger in 
+            GtL or GwL grasping modes. Afer executing the online predicted action, the updated state is then passed through the same pipeline to predict the 
+            next action, so that a successful grasp is gradually formed.<br>
           </p>
-
+          <img src="static/images/pin-gripper.png" alt="Gripper Image" style="width: 100%; height: auto;">
           <h2 class="title is-5  has-text-centered" style="color:white;">The specific constitution of the parallel pin-pression gripper:</h2>
-          <p style="font-size: 18px; line-height: 1.5;">
-            <b><i>(c) Policy learning with physics-aware digital cousins</i></b> : The identified world model is then
-            used for policy learning. Physics-aware perturbations are introduced to 𝜶 and <i>θ</i> to mitigate the
-            remained discrepancies from inaccurate observations.<br>
-            <!-- <div style="height: 10px;"></div> -->
-            <b><i>(d) Transfer to the target domain without fine-tuning</i></b> : This ensemble of perturbed world
-            models enhances the Sim2Real transferability of learned policies.
+          <p style="font-size: 18px; line-height: 1.5;color:white;">
+            The gripper finger is a 2D array of pins capable of independent extension and 
+            retraction. Each pin consists of a cylinder and a sphere. The gripper achieves 
+            full closure when every finger reaches its maximum forward movement.<br><br>
           </p>
-
         </h2>
       </div>
     </div>
